@@ -1,13 +1,27 @@
-# ScanPulse-Automated-Detection-and-Security-Assessment-Tool
+# 🛡️ ScanPulse - Automated Detection and Security Assessment Tool
 
-ScanPulse automates the process of generating a Vulnerability Assessment and Penetration Testing (VAPT) report by parsing Nmap and Nikto scan results and creating a professional PDF report. The tool extracts important details such as open and filtered ports, services, vulnerabilities, and recommendations, and formats them into a well-structured report using the `reportlab` library.
+ScanPulse is a web-based security dashboard that scans target IPs, identifies vulnerabilities, and generates PDF reports automatically.
 
-## Key Features
+## What it does
+- Runs Nmap scans to detect open ports and services
+- Looks up real CVE data from the NVD database
+- Generates a professional VAPT report as a PDF
+- Displays vulnerability charts and trends on a dashboard
 
-- **Nmap and Nikto Parsing:** Extracts open ports, services, and vulnerabilities.
-- **Report Generation:** Creates a PDF report with details such as host information, scan summaries, vulnerability assessment, and recommendations.
-- **Customizable:** Easily adaptable to different scan outputs and report formats.
+## Screenshots
+![Dashboard](Dashboard.png)
 
-## Usage
+## Tech Used
+Python, Streamlit, Nmap, Nikto, ReportLab, Plotly, NVD API
 
-Provide the directory containing the Nmap and Nikto scan results, and the script will output a complete PDF report.
+## Setup
+- Install Python 3.10+ and Nmap
+- Install dependencies: `pip install streamlit pandas plotly reportlab lxml requests python-dotenv seaborn matplotlib numpy`
+- Add your NVD API key in a `.env` file: `API_KEY=your_key_here`
+- Run: `streamlit run main.py`
+
+## Sample Report
+A sample redacted report is included — `ScanpulseReport.pdf`
+
+## Disclaimer
+Only use on systems you own or have permission to scan.
