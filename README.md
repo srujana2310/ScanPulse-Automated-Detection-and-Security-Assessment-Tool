@@ -8,7 +8,7 @@ ScanPulse is a web-based security dashboard that scans target IPs, identifies vu
 - Generates a professional VAPT report as a PDF
 - Displays vulnerability charts and trends on a dashboard
 
-## Screenshots
+## Dashboard
 ![Dashboard](Dashboard.png)
 
 ## Tech Used
