@@ -21,7 +21,7 @@ Python, Streamlit, Nmap, Nikto, ReportLab, Plotly, NVD API
 - Run: `streamlit run main.py`
 
 ## Sample Report
-A sample redacted report is included — `ScanpulseReport.pdf`
+A sample redacted report is included in the repo.
 
 ## Disclaimer
 Only use on systems you own or have permission to scan.
